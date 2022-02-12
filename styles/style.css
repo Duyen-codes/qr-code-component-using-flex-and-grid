@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+} 
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display:grid;
+    grid: 1fr min-content / 1fr;
+    row-gap: 7.5rem;
+    place-items: center;
+    background: hsl(212, 45%, 89%);
+    padding: 8.5rem 2.8rem;
+}
+
+.card {
+    max-width: 32rem;
+    height: auto; /* optional because its default, just for clearity */
+    padding: 1.6rem 1.6rem 4rem;
+    background: white;
+    border-radius: 2rem;
+    display: flex;
+    gap: 2.4rem;
+    flex-flow: column nowrap;
+    box-shadow: 0 25px 25px rgba(0,0,0,0.0476518);
+}
+
+.card__img {
+    border-radius: 1rem;
+}
+
+.card__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.6rem;
+    text-align: center;
+}
+
+.card__heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #1f314f;
+}
+
+.card__detail {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.019rem;
+    color: #7d889e;
+    padding-inline: 1.6rem;
+}
+
+.attribution {
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.attribution__link-container {
+    color: #626f87;
+}
+
+.attribution__link {
+    color: #404d63;
+    transition: color 250ms ease;
+}
+
+.attribution__link:is(:hover, :focus-within) {
+color: rgb(183, 13, 152)
+}
